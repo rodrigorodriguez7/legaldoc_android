@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/legaldoclarga"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="Inicio de Sesión"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="#000080"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:typeface="sans"
+            android:textSize="17dp"
+            android:paddingLeft="25dp"
+            android:hint="Correo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/Contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:typeface="sans"
+            android:hint="Contraseña"
+            android:textSize="17dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="25dp"/>
+
+        <Button
+            android:id="@+id/Comprobar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#000080"
+            android:text="Iniciar de sesión"
+            android:textColor="#ffffff"
+            android:typeface="sans"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#000080"
+            android:typeface="sans"
+            android:text="Registrarse"
+            android:onClick="Registrarse"/>
+
+    </LinearLayout>
+
+</LinearLayout>
